@@ -1,8 +1,8 @@
 {
-  "name": "libs-content-helper",
-  "version": "0.0.0",
+  "name": "comprodls-lib-seed-es6",
+  "version": "0.3.0",
   "description": "Universal library (UMD) with node v8, webpack and es6",
-  "main": "dist/libs-content-helper.js",
+  "main": "lib/comprodls-lib-seed.js",
   "engines": {
     "node": ">=8.0"
   },
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/comprodls/libs-content-helper"
+    "url": "https://github.com/comprodls/lib-seed-es6"
   },
   "keywords": [
     "webpack",
@@ -43,7 +43,7 @@
   "author": "Compro",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/comprodls/libs-content-helper/issues"
+    "url": "https://github.com/comprodls/lib-seed-es6/issues"
   },
-  "homepage": "https://github.com/comprodls/libs-content-helper"
+  "homepage": "https://github.com/comprodls/lib-seed-es6"
 }
