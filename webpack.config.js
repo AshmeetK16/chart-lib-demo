@@ -7,7 +7,7 @@ const env = require('yargs').argv.env;
 // contains externals function that ignores node_modules when bundling in Webpack
 const nodeExternals = require('webpack-node-externals');
 
-let libraryName = 'comprodls-lib-seed';
+let libraryName = 'libs-content-helper';
 
 let plugins = [], outputFile;
 
@@ -22,7 +22,7 @@ const config = {
   entry: __dirname + '/src/index.js',
   devtool: 'source-map',
   output: {
-    path: __dirname + '/lib',
+    path: __dirname + '/dist',
     filename: outputFile,
     library: libraryName,
     libraryTarget: 'umd',
