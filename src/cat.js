@@ -1,8 +1,12 @@
 export default class Cat {
-  constructor() {
+  constructor(context) {
     this._name = 'Cat';
+    this._context = context
   }
   get name() {
-    return this._name;
+    return {
+      name: this._name,
+      context: this._context
+    }
   }
 }
