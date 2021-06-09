@@ -8,7 +8,7 @@ export default class Cat {
 
     let contextElement = this._context.nativeElement;
 
-    let dummyDiv = contextElement.createElement('div');
+    let dummyDiv = document.createElement('div');
 
     dummyDiv.innerHTML = 'This is class page';
     contextElement.appendChild(dummyDiv);
