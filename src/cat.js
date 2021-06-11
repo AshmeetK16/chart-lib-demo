@@ -13,9 +13,12 @@ export default class Cat {
     dummyDiv.innerHTML = 'This is class page';
     contextElement.appendChild(dummyDiv);
 
+    contextElement.innerHTML = dummyDiv;
+
     return {
       name: this._name,
-      context: this._context
+      context: this._context,
+      element: dummyDiv
     };
   }
 }
