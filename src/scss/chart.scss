@@ -1,0 +1,112 @@
+.test-class{
+  color: red;
+}
+
+// @import "../../../scss/helpers";
+
+// $chart-width: 600px;
+// $skill-width: 150px;
+// $label-width: 86px;
+
+// .chart-container {
+//   max-width: $chart-width;
+//   margin: auto;
+//   .chart-area {
+//     .grid-lines {
+//       height: 100%;
+//       color: black;
+//       .inner-divs {
+//         width: calc(100% - #{$skill-width});
+//         .grid-line {
+//           border-right: 2px dashed black;
+//         }
+//       }
+//     }
+
+//     .chart-data {
+//       background-color: black;
+//       .bar-container {
+//         background-color: transparent;
+//         z-index: 1;
+//         .skill-name {
+//           font-weight: 600;
+//           font-size: 14px;
+//           height: 16px;
+//           min-width: $skill-width;
+//           color: black;
+//         }
+//         .status {
+//           font-size: 12px;
+//           font-weight: 700;
+//         }
+
+//         .bar {
+//           flex-grow: 1;
+//           .percentage {
+//             text-transform: uppercase;
+//             height: 16px;
+//             background-color: black;
+//             cursor: pointer;
+//             &:before {
+//               box-shadow: 0 0 0 0 rgba(#95a, .75);
+//             }
+//           }
+
+//           .bar-icon {
+//             background-color: black;
+//             border-radius: 50%;
+//             height: 34px;
+//             width: 34px;
+//             border: 3px solid black;
+//             margin-left: -31px;
+//             img {
+//               height: 15px;
+//               width: 15px;
+//             }
+//             i {
+//               color: black;
+//             }
+//           }
+
+//           .hidden-circle {
+//             height: 40px;
+//             width: 40px;
+//             margin: -31px;
+//             background-color: white;
+//           }
+
+//           @for $i from 1 through 100 {
+//             .percentage-#{$i} {
+//               $value: ($i * 1%);
+//               width: $value;
+//             }
+//           }
+//         }
+//       }
+
+//       .bottom-container {
+//         height: 2px;
+//         border: 1px solid black;
+//         margin-left: $skill-width;
+//       }
+//     }
+//   }
+//   .chart-labels {
+//     margin-left: $skill-width;
+//     margin-top: 12px;
+//     .label {
+//       width: $label-width;
+//       left: calc(20% - #{$label-width}/2);
+//       font-size: 12px;
+//       font-weight: 600;
+//       color: black;
+//     }
+//   }
+
+//   @for $i from 1 through 100 {
+//     .statements-#{$i} {
+//       $value: ($i * 1%);
+//       width: $value;
+//     }
+//   }
+// }
