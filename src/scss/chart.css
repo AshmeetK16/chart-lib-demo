@@ -1,0 +1,86 @@
+.test-class{
+  color: red;
+}
+
+.chart-container {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 70px;
+}
+.chart-container .chart-area .grid-lines {
+  height: 100%;
+  color: #323232;
+}
+.chart-container .chart-area .grid-lines .inner-divs {
+  width: calc(100% - 150px);
+}
+.chart-container .chart-area .grid-lines .inner-divs .grid-line {
+  border-right: 2px dashed #B4B4B4;
+}
+.chart-container .chart-area .chart-data {
+  background-color: #FFFFFF;
+}
+.chart-container .chart-area .chart-data .bar-container {
+  background-color: transparent;
+  z-index: 1;
+}
+.chart-container .chart-area .chart-data .bar-container .skill-name {
+  font-weight: 600;
+  font-size: 14px;
+  height: 16px;
+  min-width: 150px;
+  color: #323232;
+}
+.chart-container .chart-area .chart-data .bar-container .status {
+  font-size: 12px;
+  font-weight: 700;
+}
+.chart-container .chart-area .chart-data .bar-container .bar {
+  flex-grow: 1;
+}
+.chart-container .chart-area .chart-data .bar-container .bar .percentage {
+  text-transform: uppercase;
+  height: 16px;
+  background-color: #8723ff;
+  cursor: pointer;
+}
+.chart-container .chart-area .chart-data .bar-container .bar .percentage:before {
+  box-shadow: 0 0 0 0 rgba(153, 85, 170, 0.75);
+}
+.chart-container .chart-area .chart-data .bar-container .bar .bar-icon {
+  background-color: #8723ff;
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+  border: 3px solid #FFFFFF;
+  margin-left: -31px;
+}
+.chart-container .chart-area .chart-data .bar-container .bar .bar-icon img {
+  height: 15px;
+  width: 15px;
+}
+.chart-container .chart-area .chart-data .bar-container .bar .bar-icon i {
+  color: #FFFFFF;
+}
+.chart-container .chart-area .chart-data .bar-container .bar .hidden-circle {
+  height: 40px;
+  width: 40px;
+  margin: -31px;
+  background-color: #FFFFFF;
+}
+.chart-container .chart-area .chart-data .bottom-container {
+  height: 2px;
+  border: 1px solid #B4B4B4;
+  margin-left: 150px;
+}
+.chart-container .chart-labels {
+  margin-left: 150px;
+  margin-top: 12px;
+}
+.chart-container .chart-labels .label {
+  width: 86px;
+  left: calc(20% - 86px/2);
+  font-size: 12px;
+  font-weight: 600;
+  color: #323232;
+}

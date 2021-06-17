@@ -9,7 +9,10 @@ const nodeExternals = require('webpack-node-externals');
 
 let libraryName = 'comprodls-lib-seed';
 
-let plugins = [], outputFile;
+let plugins = [new webpack.ProvidePlugin({
+  $: 'jquery',
+  jQuery: 'jquery',
+})], outputFile;
 
 if (env === 'build') {
   plugins.push(new UglifyJsPlugin({ minimize: true }));

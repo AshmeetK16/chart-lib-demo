@@ -22,8 +22,10 @@
     "chai": "^4.1.1",
     "eslint": "^4.5.0",
     "eslint-loader": "^1.9.0",
+    "handlebars": "^4.7.7",
     "mocha": "^3.5.0",
     "webpack": "^3.5.5",
+    "webpack-cli": "^4.7.2",
     "webpack-node-externals": "^1.6.0",
     "yargs": "^8.0.2"
   },
@@ -45,5 +47,9 @@
   "bugs": {
     "url": "https://github.com/comprodls/lib-seed-es6/issues"
   },
-  "homepage": "https://github.com/comprodls/lib-seed-es6"
+  "homepage": "https://github.com/comprodls/lib-seed-es6",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0"
+  }
 }

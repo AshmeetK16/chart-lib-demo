@@ -1,0 +1,188 @@
+<html>    
+   
+<head>    
+    <title> Basic-1 Demo Handlebars JavaScript </title>
+    <script src="../node_modules/handlebars"></script>
+    <script src="chart-handlebars.js"></script>
+    
+    <script>  
+	  //   $(document).ready(function() {
+    //     var template = document.getElementById('test-handlebars');
+    //     var chartData = {
+    //   'type': 'horizontal-bar',
+    //   'xaxis': [
+    //     {
+    //       label: "Progressing towards C1",
+    //       value: 16,
+    //       tooltip: 'Progressing towards C1',
+    //       subLabel: ''
+    //     }, {
+    //       label: "Close to C1",
+    //       value: 34,
+    //       tooltip: 'Close to C1',
+    //       subLabel: ''
+    //     }, {
+    //       label: "C1 Level",
+    //       value: 50,
+    //       tooltip: 'C1 Level',
+    //       subLabel: ''
+    //     }, {
+    //       label: "Good Performance",
+    //       value: 65,
+    //       tooltip: 'Good Performance',
+    //       subLabel: ''
+    //     }, {
+    //       label: "Strong Performance",
+    //       value: 85,
+    //       tooltip: 'Strong Performance',
+    //       subLabel: ''
+    //     }],
+    //   'yaxis': [
+    //     {
+    //       label: "Use of English",
+    //       value: 85,
+    //       subLabel: "Completed",
+    //       tooltip: ""
+    //     },
+    //     {
+    //       label: "Reading",
+    //       value: 60,
+    //       subLabel: "Completed",
+    //       tooltip: ""
+    //     },
+    //     {
+    //       label: "Listening",
+    //       value: 35,
+    //       subLabel: "Completed",
+    //       tooltip: ""
+    //     },
+    //     {
+    //       label: "Speaking",
+    //       value: 70,
+    //       subLabel: "Pending",
+    //       tooltip: "Result is still pending. Teacher has not submitted your score yet."
+    //     },
+    //     {
+    //       label: "Writing",
+    //       value: 90,
+    //       subLabel: "Completed",
+    //       tooltip: ""
+    //     }],
+    //   'dataSet': [
+    //     {
+    //       value: 85,
+    //       img: 'mock-test.svg',
+    //     },
+    //     {
+    //       value: 60,
+    //       icon: 'fa fa-plus',
+    //     },
+    //     {
+    //       value: 35,
+    //       img: 'Download.svg',
+    //     },
+    //     {
+    //       value: 70,
+    //       img: 'showcase.svg',
+    //     },
+    //     {
+    //       value: 90,
+    //       img: 'progress-icon.svg',
+    //     }]
+    // }
+    //     createHandlebars(template, chartData);
+    //   })
+
+      document.addEventListener('DOMContentLoaded', (event) => {
+        var template = document.getElementById('test-handlebars');
+        var chartData = {
+      'type': 'horizontal-bar',
+      'xaxis': [
+        {
+          label: "Progressing towards C1",
+          value: 16,
+          tooltip: 'Progressing towards C1',
+          subLabel: ''
+        }, {
+          label: "Close to C1",
+          value: 34,
+          tooltip: 'Close to C1',
+          subLabel: ''
+        }, {
+          label: "C1 Level",
+          value: 50,
+          tooltip: 'C1 Level',
+          subLabel: ''
+        }, {
+          label: "Good Performance",
+          value: 65,
+          tooltip: 'Good Performance',
+          subLabel: ''
+        }, {
+          label: "Strong Performance",
+          value: 85,
+          tooltip: 'Strong Performance',
+          subLabel: ''
+        }],
+      'yaxis': [
+        {
+          label: "Use of English",
+          value: 85,
+          subLabel: "Completed",
+          tooltip: ""
+        },
+        {
+          label: "Reading",
+          value: 60,
+          subLabel: "Completed",
+          tooltip: ""
+        },
+        {
+          label: "Listening",
+          value: 35,
+          subLabel: "Completed",
+          tooltip: ""
+        },
+        {
+          label: "Speaking",
+          value: 70,
+          subLabel: "Pending",
+          tooltip: "Result is still pending. Teacher has not submitted your score yet."
+        },
+        {
+          label: "Writing",
+          value: 90,
+          subLabel: "Completed",
+          tooltip: ""
+        }],
+      'dataSet': [
+        {
+          value: 85,
+          img: 'mock-test.svg',
+        },
+        {
+          value: 60,
+          icon: 'fa fa-plus',
+        },
+        {
+          value: 35,
+          img: 'Download.svg',
+        },
+        {
+          value: 70,
+          img: 'showcase.svg',
+        },
+        {
+          value: 90,
+          img: 'progress-icon.svg',
+        }]
+    }
+        createHandlebars(template, chartData);
+      })
+    </script>   
+</head>    
+    
+<body><div id="test-handlebars">  	
+</div></body>    
+	   
+</html>

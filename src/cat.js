@@ -1,15 +1,28 @@
+import { createHandlebars } from './chart-handlebars';
+// import { createShadowDom } from './chart-shadowdom';
+import 'bootstrap/dist/css/bootstrap.css';
+
 export default class Cat {
   constructor(context, options) {
     this._name = 'Cat';
     this._context = context;
     this.chartData = options;
 
-    const contextElement = this._context.nativeElement;
+    // const contextElement = this._context.nativeElement;
 
-    let dummyDiv = document.createElement('div');
+    // let dummyDiv = document.createElement('div');
 
-    dummyDiv.innerHTML = "<div class='test-class'>This is class app</div>";
-    contextElement.appendChild(dummyDiv);
+    // dummyDiv.innerHTML = `<style>
+    // .test-class{
+    //   color: red;
+    // }`;
+
+    // dummyDiv.innerHTML += "<div class='test-class'>This is class app</div>";
+    // contextElement.appendChild(dummyDiv);
+
+    createHandlebars(this._context, this.chartData);
+
+    // createShadowDom(this._context, this.chartData);
   }
 
   get name() {
